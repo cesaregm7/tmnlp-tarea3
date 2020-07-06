@@ -1,3 +1,4 @@
+bigram ?= True
 train:
 	python -c "from src.models.train import train; train($(bigram))"
 visualization:
