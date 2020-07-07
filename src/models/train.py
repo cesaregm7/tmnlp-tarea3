@@ -7,6 +7,7 @@ from gensim.models import CoherenceModel
 import pyLDAvis
 import pyLDAvis.gensim
 
+#Funcion para realizar el entrenamiento
 def train(bigrams:bool = True):
     print("Leyendo la muestra de datos...")
     sample = read_sample()

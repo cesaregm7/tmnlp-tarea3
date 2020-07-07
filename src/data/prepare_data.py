@@ -2,6 +2,7 @@ from typing import List
 import pandas as pd
 import os
 
+#Leer los datos de entrenamiento
 def read_sample() -> List[str]:
     basePath = os.path.dirname(os.path.abspath(__file__))
     df = pd.read_json(basePath+'/../../data/raw/newsgroups.json')
